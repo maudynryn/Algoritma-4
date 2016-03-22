@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	int harga_awal;
+	int diskon_umur; 
+	int umur;
+	int harga_diskonumur;
+	int tanggal; 
+	int harga_akhir;
+
+	cout << "Pembelian HP "<<endl;
+	cout << "Harga Awal  :";
+	cin >> harga_awal;
+	cout << "Umur  :";
+	cin >> umur;
+	cout << "Tanggal  :";
+	cin >> tanggal;
+
+	harga_diskonumur = (harga_awal*umur/100);
+	cout << "Harga Diskon Umur  :";
+	cout << harga_diskonumur;
+
+	harga_akhir = (harga_diskonumur*tanggal/100);
+	cout << " Harga Akhir  :";
+	cout << harga_akhir;
+
+	system("pause");
+
+}
